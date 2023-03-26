@@ -46,7 +46,7 @@
                             secondMaxVal = firstMaxVal;
                             firstMaxVal = array[i];
                         }
-                        else if (array[i] > secondMaxVal)
+                        else if (array[i] > secondMaxVal && array[i] < firstMaxVal)
                         {
                             secondMaxVal = array[i];
                         }
