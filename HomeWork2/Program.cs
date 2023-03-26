@@ -1,4 +1,4 @@
-﻿namespace HomeWork2
+﻿namespace HW2
 {
     internal class Program
     {
@@ -51,7 +51,14 @@
                             secondMaxVal = array[i];
                         }
                     }
-                    Console.WriteLine($"Второй наибольший элемент массива равен: {secondMaxVal}");
+                    if (secondMaxVal == minInt)
+                    {
+                        Console.WriteLine($"Все числа в массиве равны: {firstMaxVal}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Второй наибольший элемент массива равен: {secondMaxVal}");
+                    }
                     return;
                 }
                 catch (FormatException)
